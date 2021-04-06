@@ -1,0 +1,58 @@
+<h1 id="initial-infrastructure-setup">initial infrastructure setup</h1>
+
+<p>Used previous ami called  ‘proxy - internal’</p>
+
+<p>Added ‘acl all src 0.0.0.0/0’ to /etc/squid3/squid.conf to allow access from anywhere</p>
+
+<p>Added ‘http_access allow all’ (instead of http_access allow localnet)</p>
+
+<p>CHANGED VPC DHCP OPTIONS BACK TO AMAZON-PROVIDED DNS (could not resolve names with remote-browser DCs switched off)</p>
+
+<p>Created new DHCP options for CloudFlare’s 1.1.1.1 service but used 1.1.1.3 &amp; 1.0.0.3 which includes protection from malware and adult sites.</p>
+
+<p>References:</p>
+
+<p>https://stackoverflow.com/questions/42901716/how-do-i-allow-access-to-all-requests-through-squid-proxy-server</p>
+
+<h2 id="updates-and-digest-authentication">Updates and Digest Authentication</h2>
+<p>Sudo apt-get update &amp;&amp; sudo apt-get upgrade</p>
+
+<p>Sudo apt-get install apache2-utils (required for digest authentication)</p>
+
+<p>Cd /etc/squid</p>
+
+<p>Sudo touch passwd</p>
+
+<p>Changing the owner and restricting access isn’t strictly required, but it’s good practice since the file’s contents will contain unsalted MD5-hashed passwords:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># chown proxy.proxy passwd
+# chmod 640 passwd
+</code></pre></div></div>
+
+<p>Realm=mysafeinternet
+Username=adam
+Password=mysafeinternet</p>
+
+<p>Sudo htdigest /etc/squid/passwd mysafeinternet adam</p>
+
+<p>&lt;Using password ‘mysafeinternet’&gt;</p>
+
+<p>Test authentication with:</p>
+
+<p>/usr/lib/squid3/digest_file_auth - c /etc/squid/passwd
+Type
+“adam”:”mysafeinternet”
+The hash is returned successfully</p>
+
+<h2 id="update-squidconf">Update squid.conf</h2>
+<p>Removed all the acls for safe ports etc just to focus on the auth_users</p>
+
+<p>auth_param digest program /usr/lib/squid3/digest_file_auth -c /etc/squid/passwd
+auth_param digest realm mysafeinternet
+auth_param digest children 2
+acl auth_users proxy_auth REQUIRED
+http_access allow auth_users (Instead of allow all or named ports)
+http_port 13128 (change from default for obscurity)</p>
+
+<p>References
+https://blog.mafr.de/2013/06/16/setting-up-a-web-proxy-with-squid/&gt; 
+https://wiki.squid-cache.org/Features/Authentication</p>

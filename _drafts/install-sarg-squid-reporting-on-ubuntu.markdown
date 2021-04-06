@@ -1,0 +1,1 @@
+https://www.server-world.info/en/note?os=Ubuntu_18.04&p=squid&f=7
