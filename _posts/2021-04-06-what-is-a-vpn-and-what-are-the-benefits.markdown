@@ -2,13 +2,16 @@
 layout: post
 title:  "What is a VPN and what are the benefits?"
 date:   2021-04-06 16:13:37 +0100
+# tags: VPNs
 categories: Internet-Safety VPNs
+excerpt_separator: <!--more-->
 ---
 #### A Virtual Private Network (VPN) is a way of securely tunneling your data across the internet to a VPN server. 
 
 #### VPNs are used by organisations and individuals for different reasons.
 
 #### **Before using a VPN you should consider what benefits you get from using it...**
+<!--more-->
 
 ## Why do organisations use VPNs?
 
@@ -79,7 +82,7 @@ Instead, VPN Servers are used as basic [proxy servers][proxy-servers] but withou
 
 Services such as [MySafeInternet][mysafeinternet] provide added protection for internet browsing by seperating the web browser from the end-user device. [MySafeInternet][mysafeinternet] can be used in addition to VPNs, providing an added layer of protection for your device.
 
-However, as the popularity of VPNs seemingly implies; there is no shortage of people willing to pay for internet access via a VPN that provides little more than an IP address for consumption of digital services in another region.
+However, as the popularity of VPNs seemingly implies; there is no shortage of people wishing to swap visibility of their internet traffic from their ISP to their VPN provider with the bonus of obtaining an IP address for consumption of digital services in another region.
 
 
 [digital-fingerprint]: https://blog.mozilla.org/internetcitizen/2018/07/26/this-is-your-digital-fingerprint/
