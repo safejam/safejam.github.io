@@ -22,6 +22,7 @@ title: MySafeInternet Blog
 email: info@mysafeinternet.com
 description: >- # this means to ignore newlines until "baseurl:"
   Helping you and your family stay safe and giving concerned adults peace of mind when browsing the internet.
+  © SafeJAM Ltd 2021
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.mysafeinternet.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mysafeinternet
@@ -34,7 +35,7 @@ plugins:
   - jekyll-feed
 
 # To display post-excerpts on the Home Page
-# show_excerpts: true
+show_excerpts: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
