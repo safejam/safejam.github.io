@@ -1,532 +1,97 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blog.mysafeinternet.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.mysafeinternet.com/" rel="alternate" type="text/html" /><updated>2021-04-06T21:10:47+01:00</updated><id>https://blog.mysafeinternet.com/feed.xml</id><title type="html">MySafeInternet Blog</title><subtitle>Helping you and your family stay safe and giving concerned adults peace of mind when browsing the internet.</subtitle><entry><title type="html">Youtube Does Not Work Via Squid Proxy</title><link href="https://blog.mysafeinternet.com/2021/04/06/youtube-does-not-work-via-squid-proxy.html" rel="alternate" type="text/html" title="Youtube Does Not Work Via Squid Proxy" /><published>2021-04-06T16:31:56+01:00</published><updated>2021-04-06T16:31:56+01:00</updated><id>https://blog.mysafeinternet.com/2021/04/06/youtube-does-not-work-via-squid-proxy</id><content type="html" xml:base="https://blog.mysafeinternet.com/2021/04/06/youtube-does-not-work-via-squid-proxy.html">&lt;p&gt;Adam reported that his youtube videos don’t play&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blog.mysafeinternet.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.mysafeinternet.com/" rel="alternate" type="text/html" /><updated>2021-04-07T07:57:18+01:00</updated><id>https://blog.mysafeinternet.com/feed.xml</id><title type="html">MySafeInternet Blog</title><subtitle>Helping you and your family stay safe and giving concerned adults peace of mind when browsing the internet. © SafeJAM Ltd 2021</subtitle><entry><title type="html">What is a VPN and what are the benefits?</title><link href="https://blog.mysafeinternet.com/internet-safety/vpns/2021/04/06/what-is-a-vpn-and-what-are-the-benefits.html" rel="alternate" type="text/html" title="What is a VPN and what are the benefits?" /><published>2021-04-06T16:13:37+01:00</published><updated>2021-04-06T16:13:37+01:00</updated><id>https://blog.mysafeinternet.com/internet-safety/vpns/2021/04/06/what-is-a-vpn-and-what-are-the-benefits</id><content type="html" xml:base="https://blog.mysafeinternet.com/internet-safety/vpns/2021/04/06/what-is-a-vpn-and-what-are-the-benefits.html">&lt;h4 id=&quot;a-virtual-private-network-vpn-is-a-way-of-securely-tunneling-your-data-across-the-internet-to-a-vpn-server&quot;&gt;A Virtual Private Network (VPN) is a way of securely tunneling your data across the internet to a VPN server.&lt;/h4&gt;
 
-&lt;p&gt;The squid access.log shows TCP_DENIED/407 for lots of youtube assets and advertising etc.&lt;/p&gt;
+&lt;h4 id=&quot;vpns-are-used-by-organisations-and-individuals-for-different-reasons&quot;&gt;VPNs are used by organisations and individuals for different reasons.&lt;/h4&gt;
 
-&lt;p&gt;Basically, the digest authentication only works well in a browser or primary app (the iOS system-wide proxy includes user authentication), but not for apps (like YouTube) calling other external web assets.&lt;/p&gt;
+&lt;h4 id=&quot;before-using-a-vpn-you-should-consider-what-benefits-you-get-from-using-it&quot;&gt;&lt;strong&gt;Before using a VPN you should consider what benefits you get from using it…&lt;/strong&gt;&lt;/h4&gt;
+&lt;!--more--&gt;
 
-&lt;p&gt;From https://superuser.com/questions/351505/squid-logs-show-tcp-denied-407-error&lt;/p&gt;
+&lt;h2 id=&quot;why-do-organisations-use-vpns&quot;&gt;Why do organisations use VPNs?&lt;/h2&gt;
 
-&lt;p&gt;Squid logs show “TCP_DENIED/407” error
-Asked 9 years, 5 months ago
-Active 4 years ago
-Viewed 31k times&lt;/p&gt;
+&lt;p&gt;Organisations, companies, government departments etc. use VPNs to connect end-user devices to their private network to access internal applications or browse the internet more safely.&lt;/p&gt;
 
-&lt;p&gt;2&lt;/p&gt;
+&lt;p&gt;They deploy a VPN server on the external perimeter of their private network. A VPN client (installed on the end-user device) connects to the VPN server and in effect, creates a secure tunnel to the private network, with the VPN Server acting as a gateway.&lt;/p&gt;
 
-&lt;p&gt;I’m using Squid 3.0&lt;/p&gt;
+&lt;h3 id=&quot;alwayson-vpns&quot;&gt;AlwaysOn VPNs&lt;/h3&gt;
 
-&lt;p&gt;Example: I want to download software from cnet. After launching CNET Download.com Installer, I get an error:&lt;/p&gt;
+&lt;p&gt;Some organisations configure VPNs as ‘Always On’ which means they are permanently connected to their organisation’s private network. This provides the following benefits:&lt;/p&gt;
 
-&lt;p&gt;Internet connection error&lt;/p&gt;
-
-&lt;p&gt;We’re unable to connect to the download server. It seems that your internet connection is down or firewalled. Please check your internet and proxy setting then click the “Try Again” button below.&lt;/p&gt;
-
-&lt;p&gt;I checked Squid, and got the error:&lt;/p&gt;
-
-&lt;p&gt;1319791754.173      1 192.168.1.101 TCP_DENIED/407 2081 GET http://api.cnet.com/rest/v1.0/softwareProductLink? - NONE/- text/html
-1319791754.396      1 192.168.1.101 TCP_DENIED/407 2194 GET http://www.w3.org/TR/html4/strict.dtd - NONE/- text/html
-I searched for “TCP_DENIED/407” but I could not find a solution.&lt;/p&gt;
-
-&lt;p&gt;internet
-proxy
-squid
-Share
-Improve this question
-Follow
-edited Jun 12 ‘20 at 13:48&lt;/p&gt;
-
-&lt;p&gt;Community♦
-1
-asked Oct 28 ‘11 at 8:55&lt;/p&gt;
-
-&lt;p&gt;AAA-Super
-4322 gold badges22 silver badges55 bronze badges
-Add a comment
-1 Answer&lt;/p&gt;
-
-&lt;p&gt;2&lt;/p&gt;
-
-&lt;p&gt;The 407 error is coming from squid, telling the calling application that it must provide authentication credential to continue.&lt;/p&gt;
-
-&lt;p&gt;With a browser, this is straightforward, it would pop-up asking for the credentials if it didn’t already have them, and the user would type them in.&lt;/p&gt;
-
-&lt;p&gt;For non-interactive applications like a downloader, they should have a mechanism for entering the credentials into their configuration.&lt;/p&gt;</content><author><name></name></author><summary type="html">Adam reported that his youtube videos don’t play The squid access.log shows TCP_DENIED/407 for lots of youtube assets and advertising etc. Basically, the digest authentication only works well in a browser or primary app (the iOS system-wide proxy includes user authentication), but not for apps (like YouTube) calling other external web assets. From https://superuser.com/questions/351505/squid-logs-show-tcp-denied-407-error Squid logs show “TCP_DENIED/407” error Asked 9 years, 5 months ago Active 4 years ago Viewed 31k times 2 I’m using Squid 3.0 Example: I want to download software from cnet. After launching CNET Download.com Installer, I get an error: Internet connection error We’re unable to connect to the download server. It seems that your internet connection is down or firewalled. Please check your internet and proxy setting then click the “Try Again” button below. I checked Squid, and got the error: 1319791754.173 1 192.168.1.101 TCP_DENIED/407 2081 GET http://api.cnet.com/rest/v1.0/softwareProductLink? - NONE/- text/html 1319791754.396 1 192.168.1.101 TCP_DENIED/407 2194 GET http://www.w3.org/TR/html4/strict.dtd - NONE/- text/html I searched for “TCP_DENIED/407” but I could not find a solution. internet proxy squid Share Improve this question Follow edited Jun 12 ‘20 at 13:48 Community♦ 1 asked Oct 28 ‘11 at 8:55 AAA-Super 4322 gold badges22 silver badges55 bronze badges Add a comment 1 Answer 2 The 407 error is coming from squid, telling the calling application that it must provide authentication credential to continue. With a browser, this is straightforward, it would pop-up asking for the credentials if it didn’t already have them, and the user would type them in. For non-interactive applications like a downloader, they should have a mechanism for entering the credentials into their configuration.</summary></entry><entry><title type="html">What Is Dns Over Https</title><link href="https://blog.mysafeinternet.com/2021/04/06/what-is-dns-over-https.html" rel="alternate" type="text/html" title="What Is Dns Over Https" /><published>2021-04-06T16:31:51+01:00</published><updated>2021-04-06T16:31:51+01:00</updated><id>https://blog.mysafeinternet.com/2021/04/06/what-is-dns-over-https</id><content type="html" xml:base="https://blog.mysafeinternet.com/2021/04/06/what-is-dns-over-https.html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
-
-&lt;p&gt;Windows 10
-https://www.bleepingcomputer.com/news/microsoft/how-to-enable-dns-over-https-doh-in-windows-10/&lt;/p&gt;
-
-&lt;h2 id=&quot;macos&quot;&gt;MacOS&lt;/h2&gt;
-
-&lt;h2 id=&quot;ios&quot;&gt;iOS&lt;/h2&gt;
-
-&lt;h2 id=&quot;android&quot;&gt;Android&lt;/h2&gt;</content><author><name></name></author><summary type="html">Intro Windows 10 https://www.bleepingcomputer.com/news/microsoft/how-to-enable-dns-over-https-doh-in-windows-10/ MacOS iOS Android</summary></entry><entry><title type="html">Vpn Differences Between Ikev2 L2tp Openvpn</title><link href="https://blog.mysafeinternet.com/2021/04/06/vpn-differences-between-ikev2-l2tp-openvpn.html" rel="alternate" type="text/html" title="Vpn Differences Between Ikev2 L2tp Openvpn" /><published>2021-04-06T16:31:44+01:00</published><updated>2021-04-06T16:31:44+01:00</updated><id>https://blog.mysafeinternet.com/2021/04/06/vpn-differences-between-ikev2-l2tp-openvpn</id><content type="html" xml:base="https://blog.mysafeinternet.com/2021/04/06/vpn-differences-between-ikev2-l2tp-openvpn.html">&lt;p&gt;from https://securityboulevard.com/2019/03/openvpn-vs-ikev2-vs-l2tp-which-vpn-protocol-is-the-best/&lt;/p&gt;
-
-&lt;p&gt;A virtual private network (VPN) provides users with privacy and secure data when they browse the internet or engage in online activity. One of the most crucial elements of a VPN is the protocol that protects user anonymity from hackers, advertisement agencies and government entities.&lt;/p&gt;
-
-&lt;p&gt;The protocol determines how the VPN will secure data in transit. Providers offer a wide range of protocols based on computer operating systems, devices, performance and other aspects. Below, we examine three of the most widely used protocols in the industry: OpenVPN, IKEv2 and L2TP. Which one is best? Let’s take a closer look.
-Register Today! Secure Coding Virtual Summit
-Join us on March 24, 2021, to hear from industry-leading AppSec and DevSecOps practitioners, analysts, and visionaries as they share their best pro tips and power ups to level up your code security.&lt;/p&gt;
-
-&lt;p&gt;OpenVPN&lt;/p&gt;
-
-&lt;p&gt;OpenVPN is the most popular and recommended protocol by VPN experts. OpenVPN is versatile and highly secure, making it a mainstay of the virtual private network industry. The VPN is aptly named open because it relies on open source technologies such as OpenSSL encryption library or SSL V3/TLS V1 protocols.&lt;/p&gt;
-
-&lt;p&gt;In an OpenVPN platform, providers maintain, update and assess the technology. One of the reasons why an OpenVPN is so effective is because it shields users who engage in online activity in plain sight. Users are less vulnerable to hackers and less likely to be detected by government agencies or aggressive marketers.&lt;/p&gt;
-
-&lt;p&gt;According to this source, when data travels through the OpenVPN viewers cannot differentiate between an HTTPS and the SSL connection. The protocol can operate on any port while utilizing UDP or TCP protocols. This makes it easy for users to get around firewalls. Companies can utilize a wide range of strategies such as AES encryption, HMAC or OpenSLL when adding OpenVPN to their processes.&lt;/p&gt;
-
-&lt;p&gt;OpenVPNs require a third-party application because they are not supported by any platforms. Third-party providers such as iOS and Android, however, are supported. Although most companies offer customized OpenVPN configurations, they also allow users to personalize their own configuration.&lt;/p&gt;
-
-&lt;p&gt;So let’s summarize:
-OpenVPN Pros:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Bypasses most firewalls.
-Vetted by third parties.
-Offers top-level security.
-Works with multiple encryption methods.
-Can be configured and customized to suit any preference.
-Can bypass firewalls.
-Supports a wide range of cryptic algorithms.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;OpenVPN Cons:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Highly technical and complex setup.
-Relies upon third-party software.
-Desktop-strong, but mobile can be weak.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;IKEv2&lt;/p&gt;
-
-&lt;p&gt;IKEv2 was designed as a joint project between Cisco Systems and Microsoft. It operates as a true protocol and controls the IPSec key exchange.&lt;/p&gt;
-
-&lt;p&gt;IKEv2 has the distinction of operating on non-mainstream platforms such as Linux, BlackBerry or other marginal platforms. However, it also comes with the Windows 7 operating system. Because of its ability to adapt, IKEv2 offers a consistent connection in various networks. So, if a connection drops, the IKEv2 helps the user maintain a VPN connection.&lt;/p&gt;
-
-&lt;p&gt;Like most protocols, IKEv2 meets user privacy demands. Since it offers support for MOBIKE, it can adapt to changes in any network. Therefore, if the user suddenly switches from a Wi-Fi connection to a data connection, IKEv2 can handle it flawlessly without losing the connection.&lt;/p&gt;
-
-&lt;p&gt;In summary:
-IKEv2 Pros:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Supports a wide range of encryption protocols.
-Offers high-level stability and consistent connectivity.
-Offers easy setup.
-Super-fast VPN protocol.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;IKEv2 Cons:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Limited support for platforms.
-Not immune to firewall blocks.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;L2TP&lt;/p&gt;
-
-&lt;p&gt;The most notable characteristic of L2TP is its inability to operate alone. To offer encryption or protection for data in transit, it must be paired with IPSec.&lt;/p&gt;
-
-&lt;p&gt;L2TP is an extension of the PPTP protocol. It operates on a double encapsulation that includes a PPP connection on level one and an IPsec encryption on level two. While the L2TP protocol does support AES-256, stronger protocols can slow the performance.&lt;/p&gt;
-
-&lt;p&gt;Most desktop and mobile OSes contain L2TP, which makes implementation relatively simple. However, users and developers alike have noted that L2TP can be blocked by firewalls. What struggles it may have with firewalls, it more than makes up for in sender/receiver privacy.&lt;/p&gt;
-
-&lt;p&gt;The L2TP design prevents hackers from viewing or intercepting data in transit.&lt;/p&gt;
-
-&lt;p&gt;While the connection is secure, the protocol can be weak and slow. The connection can be hindered due to the traffic conversion into the L2TP format. Developers and users must also account for the additional layer of encryption.&lt;/p&gt;
-
-&lt;p&gt;Let’s look at the summary:
-L2TP Pros:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Available on nearly all devices and operating systems.
-Easy setup process.
-High levels of security that display some weaknesses.
-Multithreading improves performance.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;L2TP Cons:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Can be blocked by firewalls.
-Performance can be blocked.
-Double encapsulation can slow down performance.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Which Protocol is Best?&lt;/p&gt;
-
-&lt;p&gt;With the different elements of each protocol and their varying application, the best protocol depends on the needs of the developer and the users. While the OpenVPN may be considered the go-to protocol, there are several factors to consider.&lt;/p&gt;
-
-&lt;p&gt;The OpenVPN is speedy, versatile and secure. It’s also compatible with any operating system both on-site and remote. Users that want a problem-free, high-performance protocol should probably stick with OpenVPN.&lt;/p&gt;
-
-&lt;p&gt;Remember, however, that OpenVPNs requires a third-party. Developers that have an issue with this type of setup may want to turn to an L2TP or IKEv2. Some main considerations are security, speed, connectivity consistency and overall high performance. So, third-party support may not be high on the priority list.&lt;/p&gt;
-
-&lt;p&gt;And last, how will the configuration with all platforms and devices affect the overall performance of the service and network? Developers need to ask these questions from their client’s perspective. Can a developer provide exceptional service with a VPN that doesn’t provide the absolute best security or super-fast speed?&lt;/p&gt;
-
-&lt;p&gt;Taking everything into consideration, our belief is the OpenVPN is still the best protocol for all types of operating systems, devices and platforms.&lt;/p&gt;</content><author><name></name></author><summary type="html">from https://securityboulevard.com/2019/03/openvpn-vs-ikev2-vs-l2tp-which-vpn-protocol-is-the-best/ A virtual private network (VPN) provides users with privacy and secure data when they browse the internet or engage in online activity. One of the most crucial elements of a VPN is the protocol that protects user anonymity from hackers, advertisement agencies and government entities. The protocol determines how the VPN will secure data in transit. Providers offer a wide range of protocols based on computer operating systems, devices, performance and other aspects. Below, we examine three of the most widely used protocols in the industry: OpenVPN, IKEv2 and L2TP. Which one is best? Let’s take a closer look. Register Today! Secure Coding Virtual Summit Join us on March 24, 2021, to hear from industry-leading AppSec and DevSecOps practitioners, analysts, and visionaries as they share their best pro tips and power ups to level up your code security. OpenVPN OpenVPN is the most popular and recommended protocol by VPN experts. OpenVPN is versatile and highly secure, making it a mainstay of the virtual private network industry. The VPN is aptly named open because it relies on open source technologies such as OpenSSL encryption library or SSL V3/TLS V1 protocols. In an OpenVPN platform, providers maintain, update and assess the technology. One of the reasons why an OpenVPN is so effective is because it shields users who engage in online activity in plain sight. Users are less vulnerable to hackers and less likely to be detected by government agencies or aggressive marketers. According to this source, when data travels through the OpenVPN viewers cannot differentiate between an HTTPS and the SSL connection. The protocol can operate on any port while utilizing UDP or TCP protocols. This makes it easy for users to get around firewalls. Companies can utilize a wide range of strategies such as AES encryption, HMAC or OpenSLL when adding OpenVPN to their processes. OpenVPNs require a third-party application because they are not supported by any platforms. Third-party providers such as iOS and Android, however, are supported. Although most companies offer customized OpenVPN configurations, they also allow users to personalize their own configuration. So let’s summarize: OpenVPN Pros: Bypasses most firewalls. Vetted by third parties. Offers top-level security. Works with multiple encryption methods. Can be configured and customized to suit any preference. Can bypass firewalls. Supports a wide range of cryptic algorithms. OpenVPN Cons: Highly technical and complex setup. Relies upon third-party software. Desktop-strong, but mobile can be weak. IKEv2 IKEv2 was designed as a joint project between Cisco Systems and Microsoft. It operates as a true protocol and controls the IPSec key exchange. IKEv2 has the distinction of operating on non-mainstream platforms such as Linux, BlackBerry or other marginal platforms. However, it also comes with the Windows 7 operating system. Because of its ability to adapt, IKEv2 offers a consistent connection in various networks. So, if a connection drops, the IKEv2 helps the user maintain a VPN connection. Like most protocols, IKEv2 meets user privacy demands. Since it offers support for MOBIKE, it can adapt to changes in any network. Therefore, if the user suddenly switches from a Wi-Fi connection to a data connection, IKEv2 can handle it flawlessly without losing the connection. In summary: IKEv2 Pros: Supports a wide range of encryption protocols. Offers high-level stability and consistent connectivity. Offers easy setup. Super-fast VPN protocol. IKEv2 Cons: Limited support for platforms. Not immune to firewall blocks. L2TP The most notable characteristic of L2TP is its inability to operate alone. To offer encryption or protection for data in transit, it must be paired with IPSec. L2TP is an extension of the PPTP protocol. It operates on a double encapsulation that includes a PPP connection on level one and an IPsec encryption on level two. While the L2TP protocol does support AES-256, stronger protocols can slow the performance. Most desktop and mobile OSes contain L2TP, which makes implementation relatively simple. However, users and developers alike have noted that L2TP can be blocked by firewalls. What struggles it may have with firewalls, it more than makes up for in sender/receiver privacy. The L2TP design prevents hackers from viewing or intercepting data in transit. While the connection is secure, the protocol can be weak and slow. The connection can be hindered due to the traffic conversion into the L2TP format. Developers and users must also account for the additional layer of encryption. Let’s look at the summary: L2TP Pros: Available on nearly all devices and operating systems. Easy setup process. High levels of security that display some weaknesses. Multithreading improves performance. L2TP Cons: Can be blocked by firewalls. Performance can be blocked. Double encapsulation can slow down performance. Which Protocol is Best? With the different elements of each protocol and their varying application, the best protocol depends on the needs of the developer and the users. While the OpenVPN may be considered the go-to protocol, there are several factors to consider. The OpenVPN is speedy, versatile and secure. It’s also compatible with any operating system both on-site and remote. Users that want a problem-free, high-performance protocol should probably stick with OpenVPN. Remember, however, that OpenVPNs requires a third-party. Developers that have an issue with this type of setup may want to turn to an L2TP or IKEv2. Some main considerations are security, speed, connectivity consistency and overall high performance. So, third-party support may not be high on the priority list. And last, how will the configuration with all platforms and devices affect the overall performance of the service and network? Developers need to ask these questions from their client’s perspective. Can a developer provide exceptional service with a VPN that doesn’t provide the absolute best security or super-fast speed? Taking everything into consideration, our belief is the OpenVPN is still the best protocol for all types of operating systems, devices and platforms.</summary></entry><entry><title type="html">Supervised Vs Unsupervised Iphones</title><link href="https://blog.mysafeinternet.com/2021/04/06/supervised-vs-unsupervised-iphones.html" rel="alternate" type="text/html" title="Supervised Vs Unsupervised Iphones" /><published>2021-04-06T16:31:38+01:00</published><updated>2021-04-06T16:31:38+01:00</updated><id>https://blog.mysafeinternet.com/2021/04/06/supervised-vs-unsupervised-iphones</id><content type="html" xml:base="https://blog.mysafeinternet.com/2021/04/06/supervised-vs-unsupervised-iphones.html">&lt;p&gt;ref: https://blog.scalefusion.com/ios-supervised-vs-unsupervised-benefits-of-supervising-ios-devices/&lt;/p&gt;</content><author><name></name></author><summary type="html">ref: https://blog.scalefusion.com/ios-supervised-vs-unsupervised-benefits-of-supervising-ios-devices/</summary></entry><entry><title type="html">Supervise Iphones Ipads Apple Configurator</title><link href="https://blog.mysafeinternet.com/2021/04/06/supervise-iphones-ipads-apple-configurator.html" rel="alternate" type="text/html" title="Supervise Iphones Ipads Apple Configurator" /><published>2021-04-06T16:31:34+01:00</published><updated>2021-04-06T16:31:34+01:00</updated><id>https://blog.mysafeinternet.com/2021/04/06/supervise-iphones-ipads-apple-configurator</id><content type="html" xml:base="https://blog.mysafeinternet.com/2021/04/06/supervise-iphones-ipads-apple-configurator.html">&lt;p&gt;Apple’s stance on managing iOS devices at the enterprise level has often been met with minimal native support from the company themselves. Their stance that iOS devices are personal devices to be managed by the individual end users has led the way for the growth of Mobile Device Management (MDM) software to aid in iOS management.&lt;/p&gt;
-
-&lt;p&gt;While there are many options to choose from, many MDM’s require costly subscription licenses and/or infrastructure considerations that may be out of reach for some organizations, including public education and SMBs. Luckily, Apple Configurator 2 (AC2) includes many of the necessary functionality to manage iOS at a higher level with its supervision mode.&lt;/p&gt;
-
-&lt;p&gt;For those unfamiliar with how this works, we’ll explore supervision, how it works, and how to configure devices for its use. But first, there are a few requirements necessary to make this work as intended.&lt;/p&gt;
-
-&lt;p&gt;Apple computer with macOS Mojave installed
-Apple Configurator 2 (2.6 or later) installed
-Internet access (Optional, but highly recommended to download applications)
-iPad or iPhone device with iOS 12 (or later) installed
-SEE: Mobile device computing policy (Tech Pro Research)&lt;/p&gt;
-
-&lt;p&gt;What is supervise mode?
-Supervision was introduced in iOS 5 and has experienced many framework updates over the years as newer versions of iOS are introduced. While additional support for greater features continues to be included, the crux of supervise remains the same: To allow systems administrator’s greater control over iOS devices by securing and allowing the configuration of features and functions, allowing these devices (typically enterprise-owned) to be locked down to prevent unauthorized changes that could otherwise lead to device compromise, and by extension, compromise the data and/or business network.&lt;/p&gt;
-
-&lt;p&gt;What features can be secured when a device is supervised?
-This list of functions that are manageable are long–and continue to grow with the introduction of each new version of iOS. Among the more popular settings that admins can control include requiring passcodes for unlocking devices, setting minimum passcode lengths and complexity requirements, as well as timeouts and incorrect passcode lockouts, all of which protect data stored on devices from unauthorized access and data exfiltration in the event of loss or theft. Additional restrictions include setting profiles for corporate network and email access, company branding, and key escrow services that store a recovery key that may be used to bypass Activation Lock on iCloud-linked devices, for example.&lt;/p&gt;
-
-&lt;p&gt;Are there any requirements for a device to be supervised?
-Any iOS device running iOS 5 (at least) is eligible for supervision. However, admins may wish to consult iOS release notes to verify that individual devices have the correct version of iOS installed so that support of required functions/features is adhered to. When supervising a device, ensure that existing data on the devices are backed-up since the supervision process erases all the data on the device and reinstalls (or upgrade) iOS, setting the foundation for the management platform.&lt;/p&gt;
-
-&lt;p&gt;Configuring a device for supervision
-Login to the Mac computer and launch the Apple Configurator 2 (AC2) app.
-Connect the device(s) to be configured to the Mac using the USB cable.
-In AC2, select the iOS device you wish to configure, then click on Actions | Prepare… to launch the wizard.
-Since AC2 can be used to prepare devices for MDM use, we are prompted with the Configuration type on the first page of the wizard. For the purposes of this article and since we are not configuring the device for MDM management, select Manual from the drop-down menu, then click the Next button.
-On the next page, you’ll be prompted to select the server to manage the device with post-AC2. Again, we will not be enrolling this device in an MDM, so we will select Do not enroll in MDM from the drop-down menu and click the Next button to proceed.
-On the Supervise Devices page, you will be prompted to check the box next to Supervise devices, which enables supervision on that device. Additionally, if you wish to allow supervised devices to pair with their computers, check the box to allow that functionality. Otherwise, supervised devices will be disallowed from pairing with computers. Click the Next button to continue.
-If you wish to enter information about the organization, you may do so on the following page. Enter the desired details and click the Next button.
-When working with supervised devices, supervision identities are required. If setting up supervised devices for the first time, select the radio button next to Generate a New Supervision Identity to create a new one for your organization, then click Next to continue.
-On the final page of the wizard, you will be prompted with choosing what options are presented to the end user during the Setup Assistant portion after the device is initialized. While optional, it is recommended that admins configure this portion by placing a check mark in the box next to each item you wish to allow the end user to configure–any boxes not checked will restrict end users from configuring those options during the Setup Assistant phase. Once these choices are configured, click the Prepare button to erase the device and reboot it in its newly supervised mode.&lt;/p&gt;</content><author><name></name></author><summary type="html">Apple’s stance on managing iOS devices at the enterprise level has often been met with minimal native support from the company themselves. Their stance that iOS devices are personal devices to be managed by the individual end users has led the way for the growth of Mobile Device Management (MDM) software to aid in iOS management. While there are many options to choose from, many MDM’s require costly subscription licenses and/or infrastructure considerations that may be out of reach for some organizations, including public education and SMBs. Luckily, Apple Configurator 2 (AC2) includes many of the necessary functionality to manage iOS at a higher level with its supervision mode. For those unfamiliar with how this works, we’ll explore supervision, how it works, and how to configure devices for its use. But first, there are a few requirements necessary to make this work as intended. Apple computer with macOS Mojave installed Apple Configurator 2 (2.6 or later) installed Internet access (Optional, but highly recommended to download applications) iPad or iPhone device with iOS 12 (or later) installed SEE: Mobile device computing policy (Tech Pro Research) What is supervise mode? Supervision was introduced in iOS 5 and has experienced many framework updates over the years as newer versions of iOS are introduced. While additional support for greater features continues to be included, the crux of supervise remains the same: To allow systems administrator’s greater control over iOS devices by securing and allowing the configuration of features and functions, allowing these devices (typically enterprise-owned) to be locked down to prevent unauthorized changes that could otherwise lead to device compromise, and by extension, compromise the data and/or business network. What features can be secured when a device is supervised? This list of functions that are manageable are long–and continue to grow with the introduction of each new version of iOS. Among the more popular settings that admins can control include requiring passcodes for unlocking devices, setting minimum passcode lengths and complexity requirements, as well as timeouts and incorrect passcode lockouts, all of which protect data stored on devices from unauthorized access and data exfiltration in the event of loss or theft. Additional restrictions include setting profiles for corporate network and email access, company branding, and key escrow services that store a recovery key that may be used to bypass Activation Lock on iCloud-linked devices, for example. Are there any requirements for a device to be supervised? Any iOS device running iOS 5 (at least) is eligible for supervision. However, admins may wish to consult iOS release notes to verify that individual devices have the correct version of iOS installed so that support of required functions/features is adhered to. When supervising a device, ensure that existing data on the devices are backed-up since the supervision process erases all the data on the device and reinstalls (or upgrade) iOS, setting the foundation for the management platform. Configuring a device for supervision Login to the Mac computer and launch the Apple Configurator 2 (AC2) app. Connect the device(s) to be configured to the Mac using the USB cable. In AC2, select the iOS device you wish to configure, then click on Actions | Prepare… to launch the wizard. Since AC2 can be used to prepare devices for MDM use, we are prompted with the Configuration type on the first page of the wizard. For the purposes of this article and since we are not configuring the device for MDM management, select Manual from the drop-down menu, then click the Next button. On the next page, you’ll be prompted to select the server to manage the device with post-AC2. Again, we will not be enrolling this device in an MDM, so we will select Do not enroll in MDM from the drop-down menu and click the Next button to proceed. On the Supervise Devices page, you will be prompted to check the box next to Supervise devices, which enables supervision on that device. Additionally, if you wish to allow supervised devices to pair with their computers, check the box to allow that functionality. Otherwise, supervised devices will be disallowed from pairing with computers. Click the Next button to continue. If you wish to enter information about the organization, you may do so on the following page. Enter the desired details and click the Next button. When working with supervised devices, supervision identities are required. If setting up supervised devices for the first time, select the radio button next to Generate a New Supervision Identity to create a new one for your organization, then click Next to continue. On the final page of the wizard, you will be prompted with choosing what options are presented to the end user during the Setup Assistant portion after the device is initialized. While optional, it is recommended that admins configure this portion by placing a check mark in the box next to each item you wish to allow the end user to configure–any boxes not checked will restrict end users from configuring those options during the Setup Assistant phase. Once these choices are configured, click the Prepare button to erase the device and reboot it in its newly supervised mode.</summary></entry><entry><title type="html">Supervise Ios Devices Without Data Loss</title><link href="https://blog.mysafeinternet.com/2021/04/06/supervise-ios-devices-without-data-loss.html" rel="alternate" type="text/html" title="Supervise Ios Devices Without Data Loss" /><published>2021-04-06T16:31:29+01:00</published><updated>2021-04-06T16:31:29+01:00</updated><id>https://blog.mysafeinternet.com/2021/04/06/supervise-ios-devices-without-data-loss</id><content type="html" xml:base="https://blog.mysafeinternet.com/2021/04/06/supervise-ios-devices-without-data-loss.html">&lt;p&gt;Supervise iOS Devices without Data Loss (Backup &amp;amp; Supervise)
-If you are planning on supervising existing iOS devices that are in field then one of the challenges is to retain the data that is already present in the iOS device. A normal backup and restore on the iOS device causes the Supervision settings to be lost and the device becomes unmanaged.&lt;/p&gt;
-
-&lt;p&gt;There are some special steps required to backup and restore while supervising the device. This document outlines the steps to backup the iOS device that you want to supervise and then restore it before supervising it and hence avoid Data Loss.&lt;/p&gt;
-
-&lt;p&gt;Prerequisites
-Target iOS Device (e.g Device A): This is the iOS device that you want to Supervise and enroll in Scalefusion.
-Temporary iOS Device (e.g Device B): You would need an additional iOS device that will act as a temporary device to hold the backup.
-The OS version of Device A and Device B should be exactly same, i.e, if Device A is on 13.3 then you would need the Device B to be on 13.3
-macOS Machine: You would need one MacBook to take the backups and restore
-Apple Configurator 2 (AC2): Download and install the latest version of AC2 on the MacBook.
-Lightning Cable
-Step 1: Backup Target Device - Device A
-The first step is to take a back up of the target device.&lt;/p&gt;
-
-&lt;p&gt;Connect the Device A to the MacBook and Open Finder App, In Finder app under locations you will see the iOS Devices. When prompted accept the Trust prompts that will be shown on the MacBook and iOS device.&lt;/p&gt;
-
-&lt;p&gt;Once trusted the device details of the connected iOS device will be shown. In Device details, click General &amp;gt; Backup Now
-The Backup may also start automatically.&lt;/p&gt;
-
-&lt;p&gt;Once the backup is complete note down the timestamp that will be used in next step.&lt;/p&gt;
-
-&lt;p&gt;Step 2: Restore the Backup to Temporary Device - Device B
-In this step we will restore the backup of the target device to the temporary device.&lt;/p&gt;
-
-&lt;p&gt;Now connect the temporary device i.e Device B to the MacBook. Open the Finder App and accept the Trust prompts.
-Under Device details, Click General &amp;gt; Restore Backup… .&lt;/p&gt;
-
-&lt;p&gt;From the list of backups, select the backup that you took in Step 1.
-You can identify the backup using the timestamp&lt;/p&gt;
-
-&lt;p&gt;This will restore the backup of Device A to Device B
-Step 3: Backup Temporary Device - Device B
-Now that the Device B has the restored data from Device A, it is time to back up the Device B.&lt;/p&gt;
-
-&lt;p&gt;Connect the Device B to the MacBook if not connected already. Open the Finder App and accept the Trust prompts.
-Under Device details, Click General &amp;gt; Back Up Now.&lt;/p&gt;
-
-&lt;p&gt;Wait for the Backup to be complete. Note down the timestamp of the backup.
-Step 4: Restoring the Data and Supervising Target Device - Device A
-This is the final step that involves a multi-step process whereby we restore the data and Supervise Device A simultaneously.&lt;/p&gt;
-
-&lt;p&gt;Connect the Device A to the MacBook. Open the Finder App and click on the connected iOS device.
-Under Device details, Click General &amp;gt; Restore Backup… . From the list of backups, select the backup that you took at Step 3 i.e Backup of Device B
-You can identify the backup using the timestamp&lt;/p&gt;
-
-&lt;p&gt;The Device A will now show a message, Restore In Progress and will turn off and reboot to the Hello screen. DONOT perform any action on the device once it reaches the Hello screen.
-At this point open Apple Configurator 2 which will display the connected device.
-Right/Secondary click on the device frame that you see in AC2 to see the menu options.
-Select Prepare.&lt;/p&gt;
-
-&lt;p&gt;You will see a screen with the following options, make sure you have selected the following options,
-From the Prepare With dropdown, select Manual Configuration.
-Un-select/Uncheck Add to Device Enrollment Program.
-Select/Check Supervise Devices.
-Select/Check Allow Devices to Pair with other computers.
-Uncheck Enable Shared iPad.
-Click Next&lt;/p&gt;
-
-&lt;p&gt;In this screen when prompted for a Server, select Do not enroll in MDM. Click Next&lt;/p&gt;
-
-&lt;p&gt;Select an Organization and click Next
-Select the iOS Setup Assistant options to Skip or show. Click Prepare to start the supervision process.&lt;/p&gt;
-
-&lt;p&gt;The Supervision process will start and once the Supervision is complete you can Enroll the device using QR Code.&lt;/p&gt;
-
-&lt;p&gt;From https://help.mobilock.in/article/w830ax76x0-supervise-i-os-devices-without-data-loss-backup-supervise&lt;/p&gt;</content><author><name></name></author><summary type="html">Supervise iOS Devices without Data Loss (Backup &amp;amp; Supervise) If you are planning on supervising existing iOS devices that are in field then one of the challenges is to retain the data that is already present in the iOS device. A normal backup and restore on the iOS device causes the Supervision settings to be lost and the device becomes unmanaged. There are some special steps required to backup and restore while supervising the device. This document outlines the steps to backup the iOS device that you want to supervise and then restore it before supervising it and hence avoid Data Loss. Prerequisites Target iOS Device (e.g Device A): This is the iOS device that you want to Supervise and enroll in Scalefusion. Temporary iOS Device (e.g Device B): You would need an additional iOS device that will act as a temporary device to hold the backup. The OS version of Device A and Device B should be exactly same, i.e, if Device A is on 13.3 then you would need the Device B to be on 13.3 macOS Machine: You would need one MacBook to take the backups and restore Apple Configurator 2 (AC2): Download and install the latest version of AC2 on the MacBook. Lightning Cable Step 1: Backup Target Device - Device A The first step is to take a back up of the target device. Connect the Device A to the MacBook and Open Finder App, In Finder app under locations you will see the iOS Devices. When prompted accept the Trust prompts that will be shown on the MacBook and iOS device. Once trusted the device details of the connected iOS device will be shown. In Device details, click General &amp;gt; Backup Now The Backup may also start automatically. Once the backup is complete note down the timestamp that will be used in next step. Step 2: Restore the Backup to Temporary Device - Device B In this step we will restore the backup of the target device to the temporary device. Now connect the temporary device i.e Device B to the MacBook. Open the Finder App and accept the Trust prompts. Under Device details, Click General &amp;gt; Restore Backup… . From the list of backups, select the backup that you took in Step 1. You can identify the backup using the timestamp This will restore the backup of Device A to Device B Step 3: Backup Temporary Device - Device B Now that the Device B has the restored data from Device A, it is time to back up the Device B. Connect the Device B to the MacBook if not connected already. Open the Finder App and accept the Trust prompts. Under Device details, Click General &amp;gt; Back Up Now. Wait for the Backup to be complete. Note down the timestamp of the backup. Step 4: Restoring the Data and Supervising Target Device - Device A This is the final step that involves a multi-step process whereby we restore the data and Supervise Device A simultaneously. Connect the Device A to the MacBook. Open the Finder App and click on the connected iOS device. Under Device details, Click General &amp;gt; Restore Backup… . From the list of backups, select the backup that you took at Step 3 i.e Backup of Device B You can identify the backup using the timestamp The Device A will now show a message, Restore In Progress and will turn off and reboot to the Hello screen. DONOT perform any action on the device once it reaches the Hello screen. At this point open Apple Configurator 2 which will display the connected device. Right/Secondary click on the device frame that you see in AC2 to see the menu options. Select Prepare. You will see a screen with the following options, make sure you have selected the following options, From the Prepare With dropdown, select Manual Configuration. Un-select/Uncheck Add to Device Enrollment Program. Select/Check Supervise Devices. Select/Check Allow Devices to Pair with other computers. Uncheck Enable Shared iPad. Click Next In this screen when prompted for a Server, select Do not enroll in MDM. Click Next Select an Organization and click Next Select the iOS Setup Assistant options to Skip or show. Click Prepare to start the supervision process. The Supervision process will start and once the Supervision is complete you can Enroll the device using QR Code. From https://help.mobilock.in/article/w830ax76x0-supervise-i-os-devices-without-data-loss-backup-supervise</summary></entry><entry><title type="html">Setup Kids Proxy</title><link href="https://blog.mysafeinternet.com/2021/04/06/setup-kids-proxy.html" rel="alternate" type="text/html" title="Setup Kids Proxy" /><published>2021-04-06T16:31:22+01:00</published><updated>2021-04-06T16:31:22+01:00</updated><id>https://blog.mysafeinternet.com/2021/04/06/setup-kids-proxy</id><content type="html" xml:base="https://blog.mysafeinternet.com/2021/04/06/setup-kids-proxy.html">&lt;p&gt;You will need&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;Access to AWS&lt;/li&gt;
-  &lt;li&gt;An Apple MacOS computer with Apple Configuration&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Users cannot enter usernames or passwords into potentially malicious WiFi hotspots, which may also attack the end-user device and/or intercept data.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;All data, including internet access, is routed via the VPN to security controls in the organisation’s private network before onward transmission in a relatively safe and controlled manner.&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;On the MacOS computer, install ‘Apple Configurator 2’ from the app store&lt;/p&gt;
+&lt;h2 id=&quot;why-do-individuals-use-vpns&quot;&gt;Why do individuals use VPNs?&lt;/h2&gt;
 
-&lt;p&gt;Open Apple configurator and click ‘Get Started’&lt;/p&gt;
+&lt;p&gt;Individuals typically use VPNs for an entirely different purpose. Encouraged by the size, scale and global reach of many of the cheap &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;VPN Providers&lt;/code&gt; available to them, they subscribe to a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;VPN Service.&lt;/code&gt; It is effectively a VPN to nothing but the geographic location specified by the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;VPN Service.&lt;/code&gt; &lt;strong&gt;Why do this? What are the benefits?&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Ensure the iphone is connected to the MacOS computer via USB. If you don’t see a charging indicator, try another cable.&lt;/p&gt;
+&lt;h3 id=&quot;what-can-you-expect-from-a-vpn-provider-as-an-individual&quot;&gt;What can you expect from a VPN provider as an individual?&lt;/h3&gt;
 
-&lt;p&gt;Trust This Computer?
-Your settings and data will be accesible from ‘MacOS Computer’ when connecting wirelessly or using a cable.
-Tust or Don’t Trust&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;You download your VPN provider’s VPN client software and connect to the service location you choose&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Your network traffic is hidden inside an encrypted tunnel so that other users on your local network, or your ISP, cannot see your internet traffic. However, other parties, including the VPN Provider can see your internet traffic when it leaves the VPN Server.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Any web sites or services that you visit see the IP address of the VPN server instead of the external IP address of the network your device is connected to; this can work around any IP address restrictions such as geographic controls to access digital services.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;Create a new configuration profile&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;An IP address is a unique number assigned to all computers and internet-connected devices so they can communicate with each other&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Set general settings
-Enter MySafeInternet or family information
-Add a password for security regarding profile removal. (Same as profile name for testing)&lt;/p&gt;
-&lt;screenshot&gt;
+&lt;h3 id=&quot;what-your-vpn-provider-doesnt-do&quot;&gt;What your VPN provider doesn’t do…&lt;/h3&gt;
 
-Restrictions
-Not required in this solution but you may make personal choices
+&lt;h4 id=&quot;provide-anonymity-for-your-location&quot;&gt;Provide anonymity for your location&lt;/h4&gt;
+&lt;p&gt;VPN providers may;&lt;/p&gt;
 
-Domains
-Not configured
+&lt;ol&gt;
+  &lt;li&gt;Claim they don’t keep any logs&lt;/li&gt;
+  &lt;li&gt;Run their business in a country that doesn’t require compliance with investigatory powers&lt;/li&gt;
+  &lt;li&gt;Accept payment via Bitcoin&lt;/li&gt;
+&lt;/ol&gt;
 
-Global HTTP Proxy
-Proxy Type = Manual
-Proxy Server and Port = DNS Name of your instance or provided by MySafeInternet service
-User Name &amp;amp; Password = &lt;blank&gt; (Access to the proxy server will be secured by source UP address)
-Allow bypassing proxy to access captive networks = Yes
+&lt;p&gt;But in all cases, you connect to their VPN service from your own device with an IP address that identifies the network you connect from. Have you verified their claims and wondered if your low monthly subscription includes any kind of protection?!&lt;/p&gt;
 
-The reason we allow bypassing proxy to access captive networks is so the kids can connect to guest Wi-Fi solutions at Starbucks, McDonalds etc.
+&lt;h4 id=&quot;provide-anonymity-for-your-device&quot;&gt;Provide anonymity for your device&lt;/h4&gt;
 
-In the business world, this is sometimes not allowed in case someone sets up a fake hotspot to capture logon information.
+&lt;p&gt;Once the VPN is connected you will probably use your own web browser which provides a &lt;a href=&quot;https://blog.mozilla.org/internetcitizen/2018/07/26/this-is-your-digital-fingerprint/&quot;&gt;digital fingerprint&lt;/a&gt; and &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent&quot;&gt;user-agent&lt;/a&gt; to the web sites to which it connects.&lt;/p&gt;
 
-If your kids have an unlimited data plan on their mobiles or you're happy to top up their credit when needed, then you can leave this box checked for maximum security. 
+&lt;h4 id=&quot;provide-anonymity-for-you&quot;&gt;Provide anonymity for you&lt;/h4&gt;
 
-DNS Proxy
-- How to configure??
+&lt;p&gt;Although more obvious these days with GDPR-compliant cookie consent banners, any cookies that include your personal data on your device are still available to web tracking and internet marketing sites when you are connected to the VPN.&lt;/p&gt;
 
-Content Filter
-Filter Type = 'Built-in: Limit Adult Content'
+&lt;h4 id=&quot;offer-end-to-end-protection&quot;&gt;Offer end-to-end protection&lt;/h4&gt;
 
-Configure any other settings as required
+&lt;p&gt;There are a few things to consider regarding the protection VPNs and VPN Providers offer:&lt;/p&gt;
 
-Click File -&amp;gt; Save
-Check it has saved correctly (The name will change at the top) and close the profile.
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;VPN tunnels are encrypted but that is only effective between your VPN client and the VPN server you chose to connect to. If you visit a web site with plain old HTTP, then that connection is NOT encrypted from the VPN Server to the target web web site.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Once your data/internet traffic leaves the VPN server it is open to the same kind of traffic interception/&lt;a href=&quot;https://en.wikipedia.org/wiki/Man-in-the-middle_attack&quot;&gt;man-in-the-middle attacks&lt;/a&gt; as if the data was leaving your own device. It’s just in a different location.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;All internet traffic is received by the browser on your device, making it, and you, susceptible to inbound threats such as malware and ransomware.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;It’s safe to assume that the low monthly subscription you pay for your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;VPN Service&lt;/code&gt; doesn’t include any legal cover for you. It would also be wise to assume all connections are logged and not ‘hide’ behind VPNs for any illegal activities.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
-# Existing iPhone
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
-## From Jamf
-https://www.jamf.com/jamf-nation/discussions/14111/unsupervised-or-supervised-ios
+&lt;p&gt;They way in which organisations deploy VPN Servers makes absolute sense, in line with their intended purpose.&lt;/p&gt;
 
-1. Disable &quot;Find my iPad” on the old iOS device, perform iCloud backup on the same device
-2. Plug in the new device to Apple Configurator, Supervise and update the device to the latest iOS
-3. Once Supervised, unplug the new device and go through the Setup Assistant to restore from iCloud
-4. When the iCloud restore of the new device is complete, do not touch the Setup Assistant, plug it back into Configurator
-5. Before you refresh, change the &quot;Restore&quot; and &quot;Update iOS&quot; options to &quot;Do not Update/Restore&quot;
-6. Once refreshed, proceed through the Setup Assistant, your device should now be Supervised and ready for MDM Enrollment
+&lt;p&gt;The VPN Providers selling to individuals are not using VPN Servers for their intended purpose. There are no private networks which the end-user devices virtually join as a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Virtual Private Network&lt;/code&gt;.&lt;/p&gt;
 
-## No iCloud Storage - this did not work
+&lt;p&gt;Instead, VPN Servers are used as basic &lt;a href=&quot;https://en.wikipedia.org/wiki/Proxy_server&quot;&gt;proxy servers&lt;/a&gt; but without the added safety and controls that proxy servers can provide for browsing the internet. This is probably because proxy servers are relatively harder/more expensive to operate as a public-facing secure shared service, even if they are a more suitable technology in this scenario.&lt;/p&gt;
 
-1. Two-finger click on the device in Apple Configurator and select 'Backup...' The phone will backup.
-   &lt;insert Screenshot=&quot;&quot;&gt;
+&lt;p&gt;Services such as &lt;a href=&quot;https://mysafeinternet.com&quot;&gt;MySafeInternet&lt;/a&gt; provide added protection for internet browsing by seperating the web browser from the end-user device. &lt;a href=&quot;https://mysafeinternet.com&quot;&gt;MySafeInternet&lt;/a&gt; can be used in addition to VPNs, providing an added layer of protection for your device.&lt;/p&gt;
 
-## iCloud Backup
-
-1. Go into the Settings app on the iPhone, select 'iCloud' and then 'iCloud Backup'
-2. Verify a recent backup or click 'Backup Now'
-3. Once backup has completed, update the device
-
-## Update
-4. Two-finger click on the device in Apple Configurator and select 'Update...' Apple Configurator will download and install the latest system update for iOS.
-
-## Prepare the iPhone for supervision
-??? NOTE: If you try to set up the device without signing out then the device will be activation locked and will ask you for the iTunes account and password after reset, and will not allow you to complete the setup. ???
-
-Two-finger click on the device in Apple Configurator and select 'Prepare...'
-&lt;screenshot&gt;
-Prepare with manual configuration. Check the 'Supervise devices' box and optionally, 'Allow other devices to pair with other computers'. Click 'Next'.
-
-'Do not enroll in MDM' Click 'Next'
-
-Click Skip when asked to 'Sign in to Apple School Manager or Apple Business Manager'
-
-Enter 'MySafeInternet' or your family details when asked to 'Create an Organization'
-
-Generation a new supervision identity if this is your first device configuration, or Choose an existing supervision identity, then click Next
-
-Choose which steps will be presented to the user in Setup Assistant. If a brand new phone is being configured, select 'Show all steps', but if you plan to restore from a backup, select 'Don't show any of these steps. Click 'Prepare'.
-
-'You are making changes to your Certificate Trust Settings' Enter your password to allow this.
-
-'Configurator could not perform the requested actions becaise &quot;iPhone&quot; has already been prepared. Click &quot;Erase&quot; to erase and prepare the device again. All content and settings will be deleted. This cannot be undone.'
-
-Click 'Erase'
-
-'Preparing &quot;iPhone&quot; &lt;screenshot&gt;
-Step 3 halts when the phone has powered up and requires access to a Wi-Fi network.
-Enter your network details on the iPhone and click 'Join'.
-
-NOTE: The iPhone will now be shown in the 'Supervised' window of Apple Configurator. &lt;screenshot&gt;. When you open the settings app on the iPhone it will report 'This iPhone is supervised and managed by MySafeInternet'
-
-## Add the profile you created earlier
-Two-finger click on the device in Apple Configurator and select 'Add &amp;gt; Profiles...'
-Select the profile you saved earlier, and click 'Add'
-The consent box will pop-up; click 'Accept'
-
-## Log into the iPhone &amp;amp; restore a backup
-
-In the settings app, log in with your Apple ID.
-Once logged in, select General &amp;gt; Reset, then tap Erase All Content and Settings. Click 'Erase iPhone' &amp;amp; confirm.
-The phone will reset.
-Follow the on-screen prompts to setup the phone, with language, Wi-Fi and security. On the 'Apps &amp;amp; Data' screen, select 'Restore from iCloud Backup'
-Login with your Apple ID
-On the 'Choose Backup' screen, select your backup.
-Click 'Continue to restore the settings
-Select preferences for Siri &amp;amp; Analytics
-The 'Restore from iCloud' screen will now restore all the Apps &amp;amp; Data, and restart the iPhone again
-
-## ISSUE: This reverted to unspervised after restoring apps &amp;amp; data
-
-# Remember! Before you start, disable Find My Phone!
-
-# Updated process after the previous didn't work!
-Two-finger click on the device in Apple Configurator and select 'Prepare...'
-&lt;screenshot&gt;
-Prepare with manual configuration. Check the 'Supervise devices' box and optionally, 'Allow other devices to pair with other computers'. Click 'Next'.
-
-'Do not enroll in MDM' Click 'Next'
-
-Click Skip when asked to 'Sign in to Apple School Manager or Apple Business Manager'
-
-Enter 'MySafeInternet' or your family details when asked to 'Create an Organization'
-
-Generation a new supervision identity if this is your first device configuration, or Choose an existing supervision identity, then click Next
-
-Choose which steps will be presented to the user in Setup Assistant. Select 'Show only some steps' and only select 'Apps &amp;amp; Data'. Click 'Prepare'.
-
-'You are making changes to your Certificate Trust Settings' Enter your password to allow this. (This is only shown once ever)
-
-'Configurator could not perform the requested actions because &quot;iPhone&quot; has already been prepared. Click &quot;Erase&quot; to erase and prepare the device again. All content and settings will be deleted. This cannot be undone.'
-
-Click 'Erase'
-
-'Preparing &quot;iPhone&quot; &lt;screenshot&gt;
-The iPhone will power on and display its 'Hello' screen.
-
-### New error for Adam's phone at this point:
-NOTE: You may see an error like 'Unable to activate &quot;iPhone&quot;. The device may be activation locked. Continue on the device or use Finder to activate, and then click Try Again'
-
-*Above error is likely becuase 'Find my phone' wasn't disabled.*
-
-I clicked 'Stop' and continued with manual setup on the phone. After connecting to Wi-Fi it prompted: 'This phone is linked to an Apple ID. Enter the Apple ID and password that were used to setup this iPhone.
-
-
-Step 3 of the 'Preparing iPhone'process halts when the phone requires access to a Wi-Fi network.
-Enter your network details on the iPhone and click 'Join'.
-
-
-
-On the Apps &amp;amp; Data screen, select 'Restore from iCloud Backup'.
-Login to icloud using your Apple ID.
-On the 'Choose Backup' screen, select your backup. The backup will be downloaded.
-On the 'Restore Completed' screen, click 'Continue'
-Select preferences for Touch Id, Passcode, Location Services, Siri, Analytics, Zoom, then click 'Get Started'.
-
-
-On the MacOS computer &amp;amp; in the Apple configurator, the iPhone has now moved/will be shown in the 'Supervised' window of Apple Configurator. &lt;screenshot&gt;. 
-
-### This didnt happen (when restoring a backup taken from the same phone)
-When you open the settings app on the iPhone it will report 'This iPhone is supervised and managed by MySafeInternet'
-
-## Add the profile you created earlier
-Two-finger click on the device in Apple Configurator and select 'Add &amp;gt; Profiles...'
-Select the profile you saved earlier, and click 'Add'
-
-'Configurator requires user interaction to install the profile &quot;MySafeInternet&quot; on &quot;iPhone&quot; becuase it is not supeorvised. Tap install on the device to continue installing the profile.
-
-'Profile Downloaded. Review the profile in the settings app if you want to install it' Click Close
-
-Click 'Profile' in 'Settings'. The 'MySafeInternet' install profile will appear. Click 'Install'
-On the Consent screen, click 'Next'
-On the Warning screen, click 'Install' &amp;amp; confirm the warning about profile removal. We can use the password from the profile when we created it in Apple Configurator.
-
-Profile Installation Failed. This profile can only be installed on a supervised device.
-
-
-
-
-
-&lt;screenshot&gt;
-
-
-Powering down your proxy overnight.
-
-
-Apple Configurator
-https://support.apple.com/en-gb/apple-configurator
-
-Create and edit configuration profiles in Apple configurator 2
-https://support.apple.com/en-gb/guide/apple-configurator-2/pmd85719196/2.13/mac/10.15.6
-
-https://www.jamf.com/jamf-nation/discussions/14111/unsupervised-or-supervised-ios
-https://support.apple.com/en-gb/guide/icloud/mm7e756df7fd/icloud
-&lt;/screenshot&gt;&lt;/screenshot&gt;&lt;/screenshot&gt;&lt;/screenshot&gt;&lt;/screenshot&gt;&lt;/screenshot&gt;&lt;/screenshot&gt;&lt;/insert&gt;&lt;/blank&gt;&lt;/screenshot&gt;</content><author><name></name></author><summary type="html">You will need Access to AWS An Apple MacOS computer with Apple Configuration On the MacOS computer, install ‘Apple Configurator 2’ from the app store Open Apple configurator and click ‘Get Started’ Ensure the iphone is connected to the MacOS computer via USB. If you don’t see a charging indicator, try another cable. Trust This Computer? Your settings and data will be accesible from ‘MacOS Computer’ when connecting wirelessly or using a cable. Tust or Don’t Trust Create a new configuration profile Set general settings Enter MySafeInternet or family information Add a password for security regarding profile removal. (Same as profile name for testing) Restrictions Not required in this solution but you may make personal choices Domains Not configured Global HTTP Proxy Proxy Type = Manual Proxy Server and Port = DNS Name of your instance or provided by MySafeInternet service User Name &amp;amp; Password = (Access to the proxy server will be secured by source UP address) Allow bypassing proxy to access captive networks = Yes The reason we allow bypassing proxy to access captive networks is so the kids can connect to guest Wi-Fi solutions at Starbucks, McDonalds etc. In the business world, this is sometimes not allowed in case someone sets up a fake hotspot to capture logon information. If your kids have an unlimited data plan on their mobiles or you're happy to top up their credit when needed, then you can leave this box checked for maximum security. DNS Proxy - How to configure?? Content Filter Filter Type = 'Built-in: Limit Adult Content' Configure any other settings as required Click File -&amp;gt; Save Check it has saved correctly (The name will change at the top) and close the profile. # Existing iPhone ## From Jamf https://www.jamf.com/jamf-nation/discussions/14111/unsupervised-or-supervised-ios 1. Disable &quot;Find my iPad” on the old iOS device, perform iCloud backup on the same device 2. Plug in the new device to Apple Configurator, Supervise and update the device to the latest iOS 3. Once Supervised, unplug the new device and go through the Setup Assistant to restore from iCloud 4. When the iCloud restore of the new device is complete, do not touch the Setup Assistant, plug it back into Configurator 5. Before you refresh, change the &quot;Restore&quot; and &quot;Update iOS&quot; options to &quot;Do not Update/Restore&quot; 6. Once refreshed, proceed through the Setup Assistant, your device should now be Supervised and ready for MDM Enrollment ## No iCloud Storage - this did not work 1. Two-finger click on the device in Apple Configurator and select 'Backup...' The phone will backup. ## iCloud Backup 1. Go into the Settings app on the iPhone, select 'iCloud' and then 'iCloud Backup' 2. Verify a recent backup or click 'Backup Now' 3. Once backup has completed, update the device ## Update 4. Two-finger click on the device in Apple Configurator and select 'Update...' Apple Configurator will download and install the latest system update for iOS. ## Prepare the iPhone for supervision ??? NOTE: If you try to set up the device without signing out then the device will be activation locked and will ask you for the iTunes account and password after reset, and will not allow you to complete the setup. ??? Two-finger click on the device in Apple Configurator and select 'Prepare...' Prepare with manual configuration. Check the 'Supervise devices' box and optionally, 'Allow other devices to pair with other computers'. Click 'Next'. 'Do not enroll in MDM' Click 'Next' Click Skip when asked to 'Sign in to Apple School Manager or Apple Business Manager' Enter 'MySafeInternet' or your family details when asked to 'Create an Organization' Generation a new supervision identity if this is your first device configuration, or Choose an existing supervision identity, then click Next Choose which steps will be presented to the user in Setup Assistant. If a brand new phone is being configured, select 'Show all steps', but if you plan to restore from a backup, select 'Don't show any of these steps. Click 'Prepare'. 'You are making changes to your Certificate Trust Settings' Enter your password to allow this. 'Configurator could not perform the requested actions becaise &quot;iPhone&quot; has already been prepared. Click &quot;Erase&quot; to erase and prepare the device again. All content and settings will be deleted. This cannot be undone.' Click 'Erase' 'Preparing &quot;iPhone&quot; Step 3 halts when the phone has powered up and requires access to a Wi-Fi network. Enter your network details on the iPhone and click 'Join'. NOTE: The iPhone will now be shown in the 'Supervised' window of Apple Configurator. . When you open the settings app on the iPhone it will report 'This iPhone is supervised and managed by MySafeInternet' ## Add the profile you created earlier Two-finger click on the device in Apple Configurator and select 'Add &amp;gt; Profiles...' Select the profile you saved earlier, and click 'Add' The consent box will pop-up; click 'Accept' ## Log into the iPhone &amp;amp; restore a backup In the settings app, log in with your Apple ID. Once logged in, select General &amp;gt; Reset, then tap Erase All Content and Settings. Click 'Erase iPhone' &amp;amp; confirm. The phone will reset. Follow the on-screen prompts to setup the phone, with language, Wi-Fi and security. On the 'Apps &amp;amp; Data' screen, select 'Restore from iCloud Backup' Login with your Apple ID On the 'Choose Backup' screen, select your backup. Click 'Continue to restore the settings Select preferences for Siri &amp;amp; Analytics The 'Restore from iCloud' screen will now restore all the Apps &amp;amp; Data, and restart the iPhone again ## ISSUE: This reverted to unspervised after restoring apps &amp;amp; data # Remember! Before you start, disable Find My Phone! # Updated process after the previous didn't work! Two-finger click on the device in Apple Configurator and select 'Prepare...' Prepare with manual configuration. Check the 'Supervise devices' box and optionally, 'Allow other devices to pair with other computers'. Click 'Next'. 'Do not enroll in MDM' Click 'Next' Click Skip when asked to 'Sign in to Apple School Manager or Apple Business Manager' Enter 'MySafeInternet' or your family details when asked to 'Create an Organization' Generation a new supervision identity if this is your first device configuration, or Choose an existing supervision identity, then click Next Choose which steps will be presented to the user in Setup Assistant. Select 'Show only some steps' and only select 'Apps &amp;amp; Data'. Click 'Prepare'. 'You are making changes to your Certificate Trust Settings' Enter your password to allow this. (This is only shown once ever) 'Configurator could not perform the requested actions because &quot;iPhone&quot; has already been prepared. Click &quot;Erase&quot; to erase and prepare the device again. All content and settings will be deleted. This cannot be undone.' Click 'Erase' 'Preparing &quot;iPhone&quot; The iPhone will power on and display its 'Hello' screen. ### New error for Adam's phone at this point: NOTE: You may see an error like 'Unable to activate &quot;iPhone&quot;. The device may be activation locked. Continue on the device or use Finder to activate, and then click Try Again' *Above error is likely becuase 'Find my phone' wasn't disabled.* I clicked 'Stop' and continued with manual setup on the phone. After connecting to Wi-Fi it prompted: 'This phone is linked to an Apple ID. Enter the Apple ID and password that were used to setup this iPhone. Step 3 of the 'Preparing iPhone'process halts when the phone requires access to a Wi-Fi network. Enter your network details on the iPhone and click 'Join'. On the Apps &amp;amp; Data screen, select 'Restore from iCloud Backup'. Login to icloud using your Apple ID. On the 'Choose Backup' screen, select your backup. The backup will be downloaded. On the 'Restore Completed' screen, click 'Continue' Select preferences for Touch Id, Passcode, Location Services, Siri, Analytics, Zoom, then click 'Get Started'. On the MacOS computer &amp;amp; in the Apple configurator, the iPhone has now moved/will be shown in the 'Supervised' window of Apple Configurator. . ### This didnt happen (when restoring a backup taken from the same phone) When you open the settings app on the iPhone it will report 'This iPhone is supervised and managed by MySafeInternet' ## Add the profile you created earlier Two-finger click on the device in Apple Configurator and select 'Add &amp;gt; Profiles...' Select the profile you saved earlier, and click 'Add' 'Configurator requires user interaction to install the profile &quot;MySafeInternet&quot; on &quot;iPhone&quot; becuase it is not supeorvised. Tap install on the device to continue installing the profile. 'Profile Downloaded. Review the profile in the settings app if you want to install it' Click Close Click 'Profile' in 'Settings'. The 'MySafeInternet' install profile will appear. Click 'Install' On the Consent screen, click 'Next' On the Warning screen, click 'Install' &amp;amp; confirm the warning about profile removal. We can use the password from the profile when we created it in Apple Configurator. Profile Installation Failed. This profile can only be installed on a supervised device. Powering down your proxy overnight. Apple Configurator https://support.apple.com/en-gb/apple-configurator Create and edit configuration profiles in Apple configurator 2 https://support.apple.com/en-gb/guide/apple-configurator-2/pmd85719196/2.13/mac/10.15.6 https://www.jamf.com/jamf-nation/discussions/14111/unsupervised-or-supervised-ios https://support.apple.com/en-gb/guide/icloud/mm7e756df7fd/icloud</summary></entry><entry><title type="html">Setup Internet Filtering For Kids</title><link href="https://blog.mysafeinternet.com/2021/04/06/setup-internet-filtering-for-kids.html" rel="alternate" type="text/html" title="Setup Internet Filtering For Kids" /><published>2021-04-06T16:31:17+01:00</published><updated>2021-04-06T16:31:17+01:00</updated><id>https://blog.mysafeinternet.com/2021/04/06/setup-internet-filtering-for-kids</id><content type="html" xml:base="https://blog.mysafeinternet.com/2021/04/06/setup-internet-filtering-for-kids.html">&lt;h1 id=&quot;initial-infrastructure-setup&quot;&gt;initial infrastructure setup&lt;/h1&gt;
-
-&lt;p&gt;Used previous ami called  ‘proxy - internal’&lt;/p&gt;
-
-&lt;p&gt;Added ‘acl all src 0.0.0.0/0’ to /etc/squid3/squid.conf to allow access from anywhere&lt;/p&gt;
-
-&lt;p&gt;Added ‘http_access allow all’ (instead of http_access allow localnet)&lt;/p&gt;
-
-&lt;p&gt;CHANGED VPC DHCP OPTIONS BACK TO AMAZON-PROVIDED DNS (could not resolve names with remote-browser DCs switched off)&lt;/p&gt;
-
-&lt;p&gt;Created new DHCP options for CloudFlare’s 1.1.1.1 service but used 1.1.1.3 &amp;amp; 1.0.0.3 which includes protection from malware and adult sites.&lt;/p&gt;
-
-&lt;p&gt;References:&lt;/p&gt;
-
-&lt;p&gt;https://stackoverflow.com/questions/42901716/how-do-i-allow-access-to-all-requests-through-squid-proxy-server&lt;/p&gt;
-
-&lt;h2 id=&quot;updates-and-digest-authentication&quot;&gt;Updates and Digest Authentication&lt;/h2&gt;
-&lt;p&gt;Sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade&lt;/p&gt;
-
-&lt;p&gt;Sudo apt-get install apache2-utils (required for digest authentication)&lt;/p&gt;
-
-&lt;p&gt;Cd /etc/squid&lt;/p&gt;
-
-&lt;p&gt;Sudo touch passwd&lt;/p&gt;
-
-&lt;p&gt;Changing the owner and restricting access isn’t strictly required, but it’s good practice since the file’s contents will contain unsalted MD5-hashed passwords:&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# chown proxy.proxy passwd
-# chmod 640 passwd
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Realm=mysafeinternet
-Username=adam
-Password=mysafeinternet&lt;/p&gt;
-
-&lt;p&gt;Sudo htdigest /etc/squid/passwd mysafeinternet adam&lt;/p&gt;
-
-&lt;p&gt;&amp;lt;Using password ‘mysafeinternet’&amp;gt;&lt;/p&gt;
-
-&lt;p&gt;Test authentication with:&lt;/p&gt;
-
-&lt;p&gt;/usr/lib/squid3/digest_file_auth - c /etc/squid/passwd
-Type
-“adam”:”mysafeinternet”
-The hash is returned successfully&lt;/p&gt;
-
-&lt;h2 id=&quot;update-squidconf&quot;&gt;Update squid.conf&lt;/h2&gt;
-&lt;p&gt;Removed all the acls for safe ports etc just to focus on the auth_users&lt;/p&gt;
-
-&lt;p&gt;auth_param digest program /usr/lib/squid3/digest_file_auth -c /etc/squid/passwd
-auth_param digest realm mysafeinternet
-auth_param digest children 2
-acl auth_users proxy_auth REQUIRED
-http_access allow auth_users (Instead of allow all or named ports)
-http_port 13128 (change from default for obscurity)&lt;/p&gt;
-
-&lt;p&gt;References
-https://blog.mafr.de/2013/06/16/setting-up-a-web-proxy-with-squid/&amp;gt; 
-https://wiki.squid-cache.org/Features/Authentication&lt;/p&gt;</content><author><name></name></author><summary type="html">initial infrastructure setup Used previous ami called ‘proxy - internal’ Added ‘acl all src 0.0.0.0/0’ to /etc/squid3/squid.conf to allow access from anywhere Added ‘http_access allow all’ (instead of http_access allow localnet) CHANGED VPC DHCP OPTIONS BACK TO AMAZON-PROVIDED DNS (could not resolve names with remote-browser DCs switched off) Created new DHCP options for CloudFlare’s 1.1.1.1 service but used 1.1.1.3 &amp;amp; 1.0.0.3 which includes protection from malware and adult sites. References: https://stackoverflow.com/questions/42901716/how-do-i-allow-access-to-all-requests-through-squid-proxy-server Updates and Digest Authentication Sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade Sudo apt-get install apache2-utils (required for digest authentication) Cd /etc/squid Sudo touch passwd Changing the owner and restricting access isn’t strictly required, but it’s good practice since the file’s contents will contain unsalted MD5-hashed passwords: # chown proxy.proxy passwd # chmod 640 passwd Realm=mysafeinternet Username=adam Password=mysafeinternet Sudo htdigest /etc/squid/passwd mysafeinternet adam &amp;lt;Using password ‘mysafeinternet’&amp;gt; Test authentication with: /usr/lib/squid3/digest_file_auth - c /etc/squid/passwd Type “adam”:”mysafeinternet” The hash is returned successfully Update squid.conf Removed all the acls for safe ports etc just to focus on the auth_users auth_param digest program /usr/lib/squid3/digest_file_auth -c /etc/squid/passwd auth_param digest realm mysafeinternet auth_param digest children 2 acl auth_users proxy_auth REQUIRED http_access allow auth_users (Instead of allow all or named ports) http_port 13128 (change from default for obscurity) References https://blog.mafr.de/2013/06/16/setting-up-a-web-proxy-with-squid/&amp;gt; https://wiki.squid-cache.org/Features/Authentication</summary></entry><entry><title type="html">Setup Cloudflare Dns On Ios Iphone Ipad</title><link href="https://blog.mysafeinternet.com/2021/04/06/setup-cloudflare-dns-on-ios-iphone-ipad.html" rel="alternate" type="text/html" title="Setup Cloudflare Dns On Ios Iphone Ipad" /><published>2021-04-06T16:31:00+01:00</published><updated>2021-04-06T16:31:00+01:00</updated><id>https://blog.mysafeinternet.com/2021/04/06/setup-cloudflare-dns-on-ios-iphone-ipad</id><content type="html" xml:base="https://blog.mysafeinternet.com/2021/04/06/setup-cloudflare-dns-on-ios-iphone-ipad.html">&lt;p&gt;https://osxdaily.com/2018/04/14/how-use-cloudflare-dns-ios/&lt;/p&gt;</content><author><name></name></author><summary type="html">https://osxdaily.com/2018/04/14/how-use-cloudflare-dns-ios/</summary></entry><entry><title type="html">Settting_up_squid_with_user_cert_for_https_proxy</title><link href="https://blog.mysafeinternet.com/2021/04/06/settting_up_squid_with_user_cert_for_https_proxy.html" rel="alternate" type="text/html" title="Settting_up_squid_with_user_cert_for_https_proxy" /><published>2021-04-06T16:30:56+01:00</published><updated>2021-04-06T16:30:56+01:00</updated><id>https://blog.mysafeinternet.com/2021/04/06/settting_up_squid_with_user_cert_for_https_proxy</id><content type="html" xml:base="https://blog.mysafeinternet.com/2021/04/06/settting_up_squid_with_user_cert_for_https_proxy.html">&lt;p&gt;ref:
-https://www.visolve.com/uploads/resources/Squid26.pdf
-https://wiki.squid-cache.org/SquidFaq/SquidAcl
-https://serverfault.com/questions/106846/squid-authentication-encryption
-http://squid-web-proxy-cache.1019090.n4.nabble.com/Using-client-certificate-for-all-connection-td4681942.html&lt;/p&gt;
-
-&lt;p&gt;client-sede:
-http://dev.chromium.org/developers/design-documents/secure-web-proxy
-http://www.squid-cache.org/Doc/config/https_port/
-http://www.squid-cache.org/Doc/config/http_port/
-https://docs.openathens.net/display/public/MD/Single+tenant+use+of+Squid+with+OpenAthens&lt;/p&gt;</content><author><name></name></author><summary type="html">ref: https://www.visolve.com/uploads/resources/Squid26.pdf https://wiki.squid-cache.org/SquidFaq/SquidAcl https://serverfault.com/questions/106846/squid-authentication-encryption http://squid-web-proxy-cache.1019090.n4.nabble.com/Using-client-certificate-for-all-connection-td4681942.html client-sede: http://dev.chromium.org/developers/design-documents/secure-web-proxy http://www.squid-cache.org/Doc/config/https_port/ http://www.squid-cache.org/Doc/config/http_port/ https://docs.openathens.net/display/public/MD/Single+tenant+use+of+Squid+with+OpenAthens</summary></entry></feed>
+&lt;p&gt;However, as the popularity of VPNs seemingly implies; there is no shortage of people wishing to swap visibility of their internet traffic from their ISP to their VPN provider with the bonus of obtaining an IP address for consumption of digital services in another region.&lt;/p&gt;</content><author><name></name></author><category term="Internet-Safety" /><category term="VPNs" /><summary type="html">A Virtual Private Network (VPN) is a way of securely tunneling your data across the internet to a VPN server. VPNs are used by organisations and individuals for different reasons. Before using a VPN you should consider what benefits you get from using it…</summary></entry></feed>
