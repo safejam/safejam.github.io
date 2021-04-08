@@ -30,7 +30,7 @@ facebook_username: mysafeinternetcom
 # github_username:  jekyll
 
 # Build settings
-theme: minima
+theme: jekyll-theme-architect
 plugins:
   - jekyll-feed
 
