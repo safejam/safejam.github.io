@@ -1,8 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blog.mysafeinternet.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.mysafeinternet.com/" rel="alternate" type="text/html" /><updated>2021-04-20T18:09:53+01:00</updated><id>https://blog.mysafeinternet.com/feed.xml</id><title type="html">MySafeInternet Blog</title><subtitle>Helping you and your family stay safe and giving concerned adults peace of mind when browsing the internet. © SafeJAM Ltd 2021</subtitle><entry><title type="html">What is a VPN and what are the benefits?</title><link href="https://blog.mysafeinternet.com/internet-safety/vpns/2021/04/06/what-is-a-vpn-and-what-are-the-benefits.html" rel="alternate" type="text/html" title="What is a VPN and what are the benefits?" /><published>2021-04-06T16:13:37+01:00</published><updated>2021-04-06T16:13:37+01:00</updated><id>https://blog.mysafeinternet.com/internet-safety/vpns/2021/04/06/what-is-a-vpn-and-what-are-the-benefits</id><content type="html" xml:base="https://blog.mysafeinternet.com/internet-safety/vpns/2021/04/06/what-is-a-vpn-and-what-are-the-benefits.html">&lt;h4 id=&quot;a-virtual-private-network-vpn-is-a-way-of-securely-tunneling-your-data-across-the-internet-to-a-vpn-server&quot;&gt;A Virtual Private Network (VPN) is a way of securely tunneling your data across the internet to a VPN server.&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://blog.mysafeinternet.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.mysafeinternet.com/" rel="alternate" type="text/html" /><updated>2021-04-20T20:42:00+01:00</updated><id>https://blog.mysafeinternet.com/feed.xml</id><title type="html">MySafeInternet Blog</title><subtitle>Helping you and your family stay safe and giving concerned adults peace of mind when browsing the internet. © SafeJAM Ltd 2021</subtitle><entry><title type="html">Introduction to VPNs</title><link href="https://blog.mysafeinternet.com/intro-level/vpn/2021/04/20/introduction-to-vpns.html" rel="alternate" type="text/html" title="Introduction to VPNs" /><published>2021-04-20T19:47:17+01:00</published><updated>2021-04-20T19:47:17+01:00</updated><id>https://blog.mysafeinternet.com/intro-level/vpn/2021/04/20/introduction-to-vpns</id><content type="html" xml:base="https://blog.mysafeinternet.com/intro-level/vpn/2021/04/20/introduction-to-vpns.html">&lt;h4 id=&quot;what-is-a-virtual-private-network-vpn&quot;&gt;&lt;strong&gt;What is a Virtual Private Network (VPN)?&lt;/strong&gt;&lt;/h4&gt;
 
-&lt;h4 id=&quot;vpns-are-used-by-organisations-and-individuals-for-different-reasons&quot;&gt;VPNs are used by organisations and individuals for different reasons.&lt;/h4&gt;
+&lt;p&gt;Think of it as a tunnel. It has a start point (usually your own computer) and an end point (usually a server).&lt;/p&gt;
 
-&lt;h4 id=&quot;before-using-a-vpn-you-should-consider-what-benefits-you-get-from-using-it&quot;&gt;&lt;strong&gt;Before using a VPN you should consider what benefits you get from using it…&lt;/strong&gt;&lt;/h4&gt;
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/vpn-introduction.jpg&quot; alt=&quot;VPN introduction&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;what-does-a-vpn-do&quot;&gt;What does a VPN do?&lt;/h2&gt;
+
+&lt;p&gt;When using a VPN you are tunnelling your data between your VPN client (installed on your computer) and the VPN Server (installed somewhere else).&lt;/p&gt;
+
+&lt;p&gt;Your data within the tunnel is secured from everyone else because it is encrypted.&lt;/p&gt;
+
+&lt;p&gt;When you browse the internet via a VPN, web sites detect that your connection is from the VPN server, not your computer.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-doesnt-a-vpn-do&quot;&gt;What doesn’t a VPN do?&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Prevent cookies (that you may need to provide consent for) storing personal data on your computer for use by other web sites&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Encrypt your data 100% of the time. If you visit a web site with plain old HTTP, then that connection is NOT encrypted from the VPN Server to the web site.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Stopping web site data from being stored on your computer, making it, and you, susceptible to inbound threats such as malware and ransomware.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Provide anonymity. You may prevent home network users and your Internet Service Provider (ISP) from seeing your data, but someone will, because the tunnel terminates at the VPN server before any onward connections.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="intro-level" /><category term="vpn" /><summary type="html">What is a Virtual Private Network (VPN)? Think of it as a tunnel. It has a start point (usually your own computer) and an end point (usually a server).</summary></entry><entry><title type="html">What is a VPN and what are the benefits?</title><link href="https://blog.mysafeinternet.com/tech-level/vpn/2021/04/06/what-is-a-vpn-and-what-are-the-benefits.html" rel="alternate" type="text/html" title="What is a VPN and what are the benefits?" /><published>2021-04-06T16:13:37+01:00</published><updated>2021-04-06T16:13:37+01:00</updated><id>https://blog.mysafeinternet.com/tech-level/vpn/2021/04/06/what-is-a-vpn-and-what-are-the-benefits</id><content type="html" xml:base="https://blog.mysafeinternet.com/tech-level/vpn/2021/04/06/what-is-a-vpn-and-what-are-the-benefits.html">&lt;h4 id=&quot;a-virtual-private-network-vpn-is-a-way-of-securely-tunneling-your-data-across-the-internet-to-a-vpn-server&quot;&gt;A Virtual Private Network (VPN) is a way of securely tunneling your data across the internet to a VPN server.&lt;/h4&gt;
+
+&lt;h4 id=&quot;vpns-are-used-by-organisations-and-individuals-for-different-reasons&quot;&gt;&lt;strong&gt;VPNs are used by organisations and individuals for different reasons.&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;before-using-a-vpn-you-should-consider-what-benefits-you-get-from-using-it&quot;&gt;Before using a VPN you should consider what benefits you get from using it…&lt;/h4&gt;
 &lt;!--more--&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/vpn-world-map.jpg&quot; alt=&quot;VPN to Nowhere?!&quot; /&gt;&lt;/p&gt;
@@ -30,7 +61,12 @@
 
 &lt;h2 id=&quot;why-do-individuals-use-vpns&quot;&gt;Why do individuals use VPNs?&lt;/h2&gt;
 
-&lt;p&gt;Individuals typically use VPNs for an entirely different purpose. Encouraged by the size, scale and global reach of many of the cheap &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;VPN Providers&lt;/code&gt; available to them, they subscribe to a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;VPN Service.&lt;/code&gt; It is effectively a VPN to nothing but the geographic location specified by the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;VPN Service.&lt;/code&gt; &lt;strong&gt;Why do this? What are the benefits?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Individuals typically use VPNs for an entirely different purpose. Encouraged by the size, scale and global reach of many of the cheap &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;VPN Providers&lt;/code&gt; available to them, they subscribe to a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;VPN Service.&lt;/code&gt; It is effectively a VPN to nothing but the geographic location specified by the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;VPN Service.&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Why do this?&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;What are the benefits?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/personal-vpn.jpg&quot; alt=&quot;Personal VPN&quot; /&gt;&lt;/p&gt;
 
@@ -77,7 +113,7 @@
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;VPN tunnels are encrypted but that is only effective between your VPN client and the VPN server you chose to connect to. If you visit a web site with plain old HTTP, then that connection is NOT encrypted from the VPN Server to the target web web site.&lt;/p&gt;
+    &lt;p&gt;VPN tunnels are encrypted but that is only effective between your VPN client and the VPN server you chose to connect to. If you visit a web site with plain old HTTP, then that connection is NOT encrypted from the VPN Server to the target web site.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Once your data/internet traffic leaves the VPN server it is open to the same kind of traffic interception/&lt;a href=&quot;https://en.wikipedia.org/wiki/Man-in-the-middle_attack&quot;&gt;man-in-the-middle attacks&lt;/a&gt; as if the data was leaving your own device. It’s just in a different location.&lt;/p&gt;
@@ -100,4 +136,22 @@
 
 &lt;p&gt;Services such as &lt;a href=&quot;https://mysafeinternet.com&quot;&gt;MySafeInternet&lt;/a&gt; provide added protection for internet browsing by seperating the web browser from the end-user device. &lt;a href=&quot;https://mysafeinternet.com&quot;&gt;MySafeInternet&lt;/a&gt; can be used in addition to VPNs, providing an added layer of protection for your device.&lt;/p&gt;
 
-&lt;p&gt;However, as the popularity of VPNs seemingly implies; there is no shortage of people wishing to swap visibility of their internet traffic from their ISP to their VPN provider with the bonus of obtaining an IP address for consumption of digital services in another region.&lt;/p&gt;</content><author><name></name></author><category term="Internet-Safety" /><category term="VPNs" /><summary type="html">A Virtual Private Network (VPN) is a way of securely tunneling your data across the internet to a VPN server. VPNs are used by organisations and individuals for different reasons. Before using a VPN you should consider what benefits you get from using it…</summary></entry></feed>
+&lt;p&gt;However, as the popularity of VPNs seemingly implies; there is no shortage of people wishing to swap visibility of their internet traffic from their ISP to their VPN provider with the bonus of obtaining an IP address for consumption of digital services in another region.&lt;/p&gt;</content><author><name></name></author><category term="tech-level" /><category term="vpn" /><summary type="html">A Virtual Private Network (VPN) is a way of securely tunneling your data across the internet to a VPN server. VPNs are used by organisations and individuals for different reasons. Before using a VPN you should consider what benefits you get from using it…</summary></entry><entry><title type="html">Why we do NOT sell user data</title><link href="https://blog.mysafeinternet.com/intro-level/data/2021/03/17/why-we-do-not-sell-user-data.html" rel="alternate" type="text/html" title="Why we do NOT sell user data" /><published>2021-03-17T11:35:19+00:00</published><updated>2021-03-17T11:35:19+00:00</updated><id>https://blog.mysafeinternet.com/intro-level/data/2021/03/17/why-we-do-not-sell-user-data</id><content type="html" xml:base="https://blog.mysafeinternet.com/intro-level/data/2021/03/17/why-we-do-not-sell-user-data.html">&lt;p&gt;&lt;strong&gt;Heads Up!&lt;/strong&gt; SafeJAM Ltd operates MySafeInternet.&lt;/p&gt;
+
+&lt;p&gt;Our business has NEVER involved selling user data or targeted advertising, and we are committed to providing strong privacy protections. It’s in our DNA.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/gdpr-data-protection.jpg&quot; alt=&quot;Data Protection&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;privacy-matters&quot;&gt;Privacy matters&lt;/h2&gt;
+
+&lt;p&gt;SafeJAM Ltd, operating as MySafeInternet, will not sell, share, rent or give away any of your personal information without your consent. We operate out of the European Union, respect their privacy values and abide by the General Data Protection Regulations (GDPR).&lt;/p&gt;
+
+&lt;h2 id=&quot;its-not-our-data&quot;&gt;It’s not our data&lt;/h2&gt;
+
+&lt;p&gt;Our business is built on the trust you put into our service, to protect you, your family, and your loved ones.&lt;/p&gt;
+
+&lt;p&gt;We only have a legitimate interest in the minimum amount of configuration information (i.e. your settings) needed to make our service operational for you.&lt;/p&gt;
+
+&lt;p&gt;Your data remains yours and we have zero interest in intercepting any internet traffic or tracking user activity across the MySafeInternet service. That’s your data, not ours.&lt;/p&gt;</content><author><name></name></author><category term="intro-level" /><category term="data" /><summary type="html">Heads Up! SafeJAM Ltd operates MySafeInternet. Our business has NEVER involved selling user data or targeted advertising, and we are committed to providing strong privacy protections. It’s in our DNA.</summary></entry></feed>

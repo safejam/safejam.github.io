@@ -3,14 +3,14 @@ layout: post
 title:  "What is a VPN and what are the benefits?"
 date:   2021-04-06 16:13:37 +0100
 # tags: VPNs
-categories: Internet-Safety VPNs
+categories: tech-level vpn
 excerpt_separator: <!--more-->
 ---
 #### A Virtual Private Network (VPN) is a way of securely tunneling your data across the internet to a VPN server. 
 
-#### VPNs are used by organisations and individuals for different reasons.
+#### **VPNs are used by organisations and individuals for different reasons.**
 
-#### **Before using a VPN you should consider what benefits you get from using it...**
+#### Before using a VPN you should consider what benefits you get from using it...
 <!--more-->
 
 ![VPN to Nowhere?!](/assets/vpn-world-map.jpg)
@@ -33,7 +33,10 @@ Some organisations configure VPNs as 'Always On' which means they are permanentl
 
 ## Why do individuals use VPNs?
 
-Individuals typically use VPNs for an entirely different purpose. Encouraged by the size, scale and global reach of many of the cheap `VPN Providers` available to them, they subscribe to a `VPN Service.` It is effectively a VPN to nothing but the geographic location specified by the `VPN Service.` **Why do this? What are the benefits?**
+Individuals typically use VPNs for an entirely different purpose. Encouraged by the size, scale and global reach of many of the cheap `VPN Providers` available to them, they subscribe to a `VPN Service.` It is effectively a VPN to nothing but the geographic location specified by the `VPN Service.`
+
+- **Why do this?**
+- **What are the benefits?**
 
 ![Personal VPN](/assets/personal-vpn.jpg)
 
@@ -70,7 +73,7 @@ Although more obvious these days with GDPR-compliant cookie consent banners, any
 
 There are a few things to consider regarding the protection VPNs and VPN Providers offer:
 
-1. VPN tunnels are encrypted but that is only effective between your VPN client and the VPN server you chose to connect to. If you visit a web site with plain old HTTP, then that connection is NOT encrypted from the VPN Server to the target web web site.
+1. VPN tunnels are encrypted but that is only effective between your VPN client and the VPN server you chose to connect to. If you visit a web site with plain old HTTP, then that connection is NOT encrypted from the VPN Server to the target web site.
 
 2. Once your data/internet traffic leaves the VPN server it is open to the same kind of traffic interception/[man-in-the-middle attacks][mitm-attack] as if the data was leaving your own device. It's just in a different location.
 
