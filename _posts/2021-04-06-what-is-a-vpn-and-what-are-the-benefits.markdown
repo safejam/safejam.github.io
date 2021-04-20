@@ -13,11 +13,15 @@ excerpt_separator: <!--more-->
 #### **Before using a VPN you should consider what benefits you get from using it...**
 <!--more-->
 
+![VPN to Nowhere?!](/assets/vpn-world-map.jpg)
+
 ## Why do organisations use VPNs?
 
 Organisations, companies, government departments etc. use VPNs to connect end-user devices to their private network to access internal applications or browse the internet more safely.
 
 They deploy a VPN server on the external perimeter of their private network. A VPN client (installed on the end-user device) connects to the VPN server and in effect, creates a secure tunnel to the private network, with the VPN Server acting as a gateway.
+
+![VPN to Private Network](/assets/vpn-to-private-network.jpg)
 
 ### AlwaysOn VPNs
 
@@ -30,6 +34,8 @@ Some organisations configure VPNs as 'Always On' which means they are permanentl
 ## Why do individuals use VPNs?
 
 Individuals typically use VPNs for an entirely different purpose. Encouraged by the size, scale and global reach of many of the cheap `VPN Providers` available to them, they subscribe to a `VPN Service.` It is effectively a VPN to nothing but the geographic location specified by the `VPN Service.` **Why do this? What are the benefits?**
+
+![Personal VPN](/assets/personal-vpn.jpg)
 
 ### What can you expect from a VPN provider as an individual?
 
