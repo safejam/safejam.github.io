@@ -12,6 +12,9 @@ You can find out more information about the safe internet service we provide at 
 
 Our service provides concerned adults with peace of mind for browsing the internet by connecting via our 'safe zone'. Sign up for a free trial at [MySafeInternet.com/free-trial][free-trial]
 
+## Newsletter
+{% include newsletter_signup.html %}
+
 
 [mysafeinternet]: https://mysafeinternet.com
 [free-trial]: https://mysafeinternet.com/free-trial
